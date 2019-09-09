@@ -104,9 +104,6 @@
                 table,tr,th{
                     border: solid 1px black;
                 }
-                td{
-                    width: 100px;
-                }
             </style>
         <table summery="요약">
                 <caption>[파스타] 스타일별 열량비교</caption>
@@ -165,5 +162,28 @@
                    
        
             </table>
+
+            <style>
+                    table{
+                        border: 1px solid black;
+                    }
+                    td{
+                        border: 1px solid black;
+                    }
+                </style>
+                <table>
+                    <tr>
+                        <td colspan="2">up</td>
+                        <td rowspan="2">right</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">left</td>
+                        <td>center</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">down</td>
+                    </tr>
+                </table>
+    
     </body>
 </html>
