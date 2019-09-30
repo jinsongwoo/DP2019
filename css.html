@@ -11,6 +11,7 @@
                 color:blue;
             }
         </style>
+        <a href="index.html">돌아가기</a><br />
     </head>
     <body>
         <div id="id_external">external로 적용</div>
@@ -87,6 +88,8 @@
             div li{ color: gray; }
             /* 자식 선택자, 부등호(>) */
             div>ul>li{ text-decoration: underline; }
+            /* 선택자 그룹, 쉼표(,) */
+            div,ul,li{ font-weight:bold;}
         </style>
         <div>
             <ul>
@@ -98,5 +101,16 @@
 
         </div>
 
+        <style>
+            .color_sample{
+                color: red; 
+                color: #000; /* 3자리 컬러코드, #rgb */
+                color: #000000; /* 6자리 컬러코드, #rrggbb*/
+                color: rgb(0,0,225); /* 0~225 */
+                color: rgb(0%,10%,100%); /* 0~ 100 */
+            }
+        
+        </style>
+        <div class="color_sample">색상 입력방법</div>
     </body>
 </html>
