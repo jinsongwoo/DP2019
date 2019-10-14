@@ -6,41 +6,108 @@
         <meta charset="utf-8"/>
         <style>
             header, nav, div, footer, h1, h2 ,h3, ul, li,img{
-                border: solid 1px black;
-                margin: 5px;
+                /* border: solid 1px black; */
+                /* margin: 5px; */
+            }
+            header>ul>li{
+                float:left; /* 둥둥떠다님 : 왼쪽기준 ; */
+                list-style: none; /* 목록모양 (왼쪽동그라미) 없음 */
+                padding-left: 10px; 
+                padding-right: 10px; 
+                border-right: solid 2px gray;
+            }
+            header>ul>li:nth-child(5){
+                border: none; /* 경계선 없음 */
+            }
+            header>ul {
+                padding: 0px; /* 왼/족여백 0px */ 
+                margin-top: 14px;
+                margin-bottom: 14px;
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            #zoom{
+                margin: 9px;
+            }
+            .clear{
+                clear: both; /* Float을 해제한다 */
+                height: 0px; /* 높이 : 0 ; */
+                overflow: hidden; /* 넘치면 ; 숨김 : */
+                }
+            .float-left{float: left;}
+            .float-right{float: right;}
+
+            header>h1{
+                margin: 0px;
+            }
+            nav{
+                background-color: #eee;
+            }
+            nav>ul{
+                padding: 0px;
+                margin: 6px;
+            }
+
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            nav>h2{
+                margin: 0px;
+            }
+            div>section:nth-child(1){
+                background-color: #89f;
+            }
+            div>section:nth-child(2){
+                background-color: #5d9;
+            }
+            div>section:nth-child(3){
+                background-color: #f76;
+            }
+            div>section:nth-child(4){
+                background-color: #ec5;
+            }
+            .contant_part{
+                width: 480px;
             }
         </style>
     </head>
     <body>
         <div id="wrap">
             <header>
-                <h1>
+                <h1 class="float-left">
                     <img src="images/layout1_head_logo.jpg" />
                 </h1>
-                <ul>
+                <ul class="float-left">
                     <li>ABOUT</li>
                     <li>SERVICE</li>
                     <li>WORKS</li>
                     <li>BLOG</li>
                     <li>CONTACT US</li>
+                    <div class="clear"></div>
                 </ul>
-                <div>
+                <div id="zoom" class="float-right">
                     <img src="images/layout1_head_zoom.jpg" />
                 </div>
+                <div class="clear"></div>
             </header>
             <nav>
-                <h2>See Our Works</h2>
-                <ul>
+                <h2 class="float-left">See Our Works</h2>
+                <ul class="float-right">
                     <li>Web Design</li>
                     <li>Icons</li>
                     <li>Illustration</li>
                     <li>Misc</li>
+                    <div class="clear"></div>
                 </ul>
+                <div class="clear"></div>
             </nav>
             <div>
                 <section>
                     <h3>Web Design</h3>
-                    <div>
+                    <div class="contant_part">
                         <img src="images/layout1_img1.jpg"/>
                         <dl>
                             <dt>Lorem ipsum dolor sit amet</dt>
@@ -49,13 +116,105 @@
                             </dd>
                         </dl>
                     </div>
-                    <div>right</div>
+                    <div class="contant_part"> 
+                        <img src="images/layout1_img2.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
                 </section>
-                <section></section>
-                <section></section>
-                <section></section>
+                <section>
+                    <h3>Icons</h3>
+                    <div class="contant_part">
+                        <img src="images/layout1_img3.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="contant_part">
+                        <img src="images/layout1_img4.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+                <section>
+                    <h3>Illerstrations</h3>
+                    <div class="contant_part">
+                        <img src="images/layout1_img5.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="contant_part">
+                        <img src="images/layout1_img6.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+                <section>
+                    <h3>Miscellaneous</h3>
+                    <div class="contant_part">
+                        <img src="images/layout1_img7.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="contant_part">
+                        <img src="images/layout1_img8.jpg"/>
+                        <dl>
+                            <dt>Lorem ipsum dolor sit amet</dt>
+                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. 
+                                Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.
+                            </dd>
+                        </dl>
+                    </div>
+                </section>
+                
             </div>
-            <footer>footer</footer>
+            <footer>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
+                <p>
+                    ⓒ 2013 BlueBox. All Right Reserved.
+                </p>
+                <p>
+                    the loges in the design are the property of their respective owners/copyright holders.
+                </p>
+                <ul>
+                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                    <li><img src="images/layout1_footer_icon2.png"/></li>
+                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                    <li><img src="images/layout1_footer_icon4.png"/></li>
+                    <li><img src="images/layout1_footer_icon5.png"/></li>
+                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                </ul>
+            </footer>
 
 
         </div>
