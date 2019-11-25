@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout3</title>
+        <meta charset="utf-8" />
+        <style>
+          
+            body{
+                background-image: url("images/my dog.jpg");
+                background-size: 100% auto; /* 가로 세로 */
+                background-size: contain ; /* 표지 처럼 */
+                background-size: cover ; /* 표지 처럼 */
+                background-repeat:no-repeat; /*반복 방식 */
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: white;
+                background-position: 50% 50%; /* 가로 세로*/
+                position: static; /* 위치선정방식 : 정적인 (기본) */
+                display:block;
+                width: 100%;
+
+                color: white;
+                text-align: center;
+                padding: 100px 0px; /* 상하 좌우 */
+            }
+            .short_line{
+                width: 30px;
+                border-bottom: solid 1px gray;
+                margin: 10px 0px;
+            }
+            .long_line{
+                width: 90px;
+                border-bottom: solid 1px gray;
+                margin: 10px 0px;
+               
+            }
+            header li{
+                float: left;
+                list-style: none;
+                padding: 0px 20px 0px 0px;
+                /* 상 우 하 좌 (위에서 부터 시계방향)*/
+            }
+            header ul{
+                padding: 0px;
+            }
+            .clear{
+                clear: both; /* float을 해제한다 */
+                height: 0px; /* 높이 : 0; */
+                overflow: hidden; /*  넘치면: 숨김; */
+            }
+            .visual img{
+                display: inline;
+                display: block;
+            }
+            .visual div{
+                background-color: black;
+                color: white;
+                display: block; /* 표시방식 :  블록 형 */
+                display: inline-block;/* 표시방식 : 인라인 블럭 (절충식)*/
+
+                padding: 5px 5px 5px 5px;
+                /* 상 우 하 좌(위에서 부터 시계방향) */
+
+                position: static; /* 위치선정방식 : 정적인 (기본) */
+                position: absolute; /* 절대적인 */
+                bottom: 0px;
+                left: 0px;
+                /* top left right bottom */
+            }
+            .visual{
+                position: static;
+                position: relative; /* 관ㄱㅖ형 */
+                /* 자식이 absolute 일때 relative인 부모는 자식의 기준이 됨*/
+            }
+            #contant ul{
+                padding: 0px;
+            }
+            .card{
+                background-color: white;
+                border-right:solid 1px gray;
+                border-bottom:solid 1px gray;
+                width: 310px;
+
+                list-style: none;
+                float: left;
+                margin: 20px;
+            }
+            .info{
+                padding: 20px;
+            }
+            .info dl{
+                margin: 0px;
+                }
+            .info dt{
+                font-weight: bold;
+            }
+            .info dd{
+                margin: 0px;
+                font-size: 9px;
+            }
+            .info .date{
+                color: gray;
+            }
+            nav>ul>a:nth-child(1){
+                margin-right: 20px;
+            }
+            nav>ul>a:nth-child(2){
+                margin-right: 20px;
+            }
+            nav>ul>a:nth-child(3){
+                margin-right: 20px;
+            }
+            header{
+                font-size:30px;
+            }
+            section>ul>li{
+                list-style: none;
+            }
+            section>ul{
+                margin:0px 0px;
+                padding: 0px 0px 0px 0px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>My Polio</h1>
+              
+              
+                        
+
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+               
+            </header>
+            <div id="content">
+                
+                <section>
+                    <h3>ABOUT ME</h3>
+                    <P>
+                        I was born in I will always remember
+                        The day you kissed my lips
+                        Light as a feather
+                        And it went just like this
+                        No, it's never been better
+                        Than the summer of 2002
+                    </P>
+                    <ul id="about_list">
+                        <li>
+                            <a href="layout1.html"><img src="images/circle.png"/></a>
+                            <dl>
+    
+                             <dt>Title goes here</dt>
+                                <dd>
+                                    onsectetur adipisicing elit, sedo eiusmod
+                                    tempor incidi
+                                    et dolorerserss eerhfre mag.
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="layout2.html"><img src="images/circle.png"/></a>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                    <a href="layout3.html"><img src="images/circle.png"/></a>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <a href="free_layout.html"><img src="images/circle.png"/></a>
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                    </ul>
+                </section>
+            </div>
+            <footer>
+                <div class="short_line"></div>
+                <img src="images/layout3_icon1.png">
+                <img src="images/layout3_icon2.png">
+                <img src="images/layout3_icon3.png">
+                <img src="images/layout3_icon4.png">
+                <div class="short_line"></div>
+                <div>This website & the Internet Ends song</div>
+                <div>Copyright 2019 songwoo Design https://jinsongwoo.github.io/DP2019/</div>
+            </footer>
+        </div>
+        <form>
+                <a href="index.html"><img src="images/bye2.png"/></a>
+        </form>
+    </body>
+</html>

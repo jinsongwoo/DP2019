@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FREE LAYOUT</title>
+        <mate charset="utf-8">
+        <style>
+            /* CS5 입력하는 곳 */
+            header{
+                background-color: white;
+                color: blue; /* 글자색은 상속 됩니다. */
+                padding: 10px 50px; /* 상하 좌우 */
+                margin:0px 0px;
+                text-align: center;
+            }
+            header>h1>span:nth-child(2){
+                color: blue;
+            }
+            header>h1{
+                margin: 0px;
+            }
+            body{
+                margin: 0px;
+            }
+            header>nav>ul{
+                margin: 12px 0px; /* 상하 좌우 */
+            }
+            header>nav>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /* 상하 좌우 */
+            }
+
+            #wrap{
+                min-width: 1000px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .clear{
+                clear: both; /* float을 해제한다 */
+                height: 0px; /* 높이 : 0; */
+                overflow: hidden; /*  넘치면: 숨김; */
+            }
+            .float_left{
+                float: left;
+            }
+            .float_right{
+                float: right;
+            }
+            #main_visual{
+                /* height: 400px;*/
+                height:calc(100vw / 960 * 637);
+                background-image: url("images/mongmong.png");
+                background-size: 100% auto; /* 가로 세로 */
+                background-size: contain ; /* 표지 처럼 */
+                background-repeat:no-repeat; /*반복 방식 */
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: white;
+                background-position: 50% 50%; /* 가로 세로*/
+
+                color: white;
+                text-align: center;
+                padding: 200px 0px; /* 상하 좌우 */
+            }
+            #main_visual>h2{
+                font-size: 95px;
+                letter-spacing: 15px;
+                margin: 8px 0px; /* 상하 좌우 */
+            }
+            #top_title{
+                font-size: 25px;
+                padding-top:200px;
+            }
+            #bottom_title{
+                font-size: 15px;
+            }
+            #buttom_container{
+                margin-top: 100px;
+            }
+            section{
+                text-align: center;
+            }
+            section>h3{
+                color: #02918c;
+                margin: 15px 0px; /* 상하 좌우 */
+            }
+            section>p{
+                margin: 30px 0px; /* 상하 좌우 */
+                padding: 0px 100px; /* 상하 좌우 */
+            }
+            section>#about_list>li{
+                float: left;
+                list-style: none;
+                width: 25%; /*100 / 4 = 25 */
+                width: calc(25% - (1px / 4 * 3) - 25px - 25px);
+
+                border-right: solid 1px #ccc;
+                padding: 25px;
+            }
+            section>#about_list>li:nth-child(4){
+                border: none;
+            }
+            section #about_list{
+                padding: 0px 80px; /* 상하 좌우 */
+            }
+            section dd{
+                margin: 0px;
+            }
+            section>#work_list{
+                padding: 0px;
+                margin: 0px;
+            }
+            section>#work_list>li{
+                float: left;
+                list-style: none;
+                width: 25%;
+            }
+            section>#work_list img{
+                width: 100%; /* 내가 쓸수 있는 공간 */
+                display: inline; /* 기본 = 인라인 */
+                display: block; /* 출력방식: 블록 */
+                
+            }
+          
+        </style>
+    </head>
+    <boby>
+        <div id="wrap">
+        <header>
+            <h1 class="float_left">
+                <span>2019222002</span>
+                <span>진송우</span>
+                <div class="clear"></div>
+                
+                <!-- div span 의미를 가지고 있지 않은 구획 나누기 -->
+            </h1>
+            <nav class="float_right">
+                <ul>
+                    <li>HOME</li>
+                    <li>ABOUT ME</li>
+                    <li>SERVICE</li>
+                    <li>MY WORK</li>
+                    <li>CONTACT ME</li>
+                    <div class="clear"></div>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="top_title">
+                    my best friend
+                </div>
+                <h2>
+                    MONGLE!
+                </h2>
+                <div id="bottom_title">
+                    hello i'm mongle
+                </div>
+                <div id="buttom_container">
+                    <img src="images/layout2_button.jpg"/>
+                </div>
+               
+            </div>
+            <section>
+                <h3>ABOUT ME</h3>
+                <P>
+                        I was born in I will always remember
+                        The day you kissed my lips
+                        Light as a feather
+                        And it went just like this
+                        No, it's never been better
+                        Than the summer of 2002.
+                </P>
+                <ul id="about_list">
+                    <li>
+                        <img src="images/layout2_icon1.jpg"/>
+                        <dl>
+
+                         <dt>Title goes here</dt>
+                            <dd>
+                                onsectetur adipisicing elit, sedo eiusmod
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                    <img src="images/layout2_icon1.jpg"/>
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod
+                            tempor incidi
+                            et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                <img src="images/layout2_icon1.jpg"/>
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod
+                            tempor incidi
+                            et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <img src="images/layout2_icon1.jpg"/>
+                    <dl>
+                        <dt>Title goes here</dt>
+                        <dd>
+                            onsectetur adipisicing elit, sedo eiusmod
+                            tempor incidi
+                            et dolorerserss eerhfre mag.
+                        </dd>
+                    </dl>
+                </li>
+                <div class="clear"></div>
+                </ul>
+                <video controls autoplay>
+                        <source src="./media/mong1.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay>
+                        <source src="./media/mong3.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay>
+                        <source src="./media/mong2.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay>
+                        <source src="./media/mong4.mp4" type="video/mp4">
+                </video>
+                <video controls autoplay>
+                        <source src="./media/mong5.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section>
+                <h3>MY WORK</h3>
+                <P>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor
+                    incididunt ut labore 
+                    et dolore magna aliqua.
+                </P>
+                <ul id="work_list">
+                    <li><img src="images/layout2_pic1.jpg"></li>
+                    <li><img src="images/layout2_pic2.jpg"></li>
+                    <li><img src="images/layout2_pic3.jpg"></li>
+                    <li><img src="images/layout2_pic4.jpg"></li>
+                    <li><img src="images/layout2_pic5.jpg"></li>
+                    <li><img src="images/layout2_pic6.jpg"></li>
+                    <li><img src="images/layout2_pic7.jpg"></li>
+                    <li><img src="images/layout2_pic8.jpg"></li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+        </div>
+
+        <form>
+                <a href="index.html">돌아가기</a>
+        </form>
+        
+    </body>
+</html>
