@@ -6,20 +6,21 @@
         <style>
             /* CS5 입력하는 곳 */
             header{
-                background-color: white;
-                color: blue; /* 글자색은 상속 됩니다. */
+                background-color: pink;
+                color: ivory; /* 글자색은 상속 됩니다. */
                 padding: 10px 50px; /* 상하 좌우 */
                 margin:0px 0px;
                 text-align: center;
             }
             header>h1>span:nth-child(2){
-                color: blue;
+                color: ivory;
             }
             header>h1{
                 margin: 0px;
             }
             body{
                 margin: 0px;
+                background-color: pink;
             }
             header>nav>ul{
                 margin: 12px 0px; /* 상하 좌우 */
@@ -81,7 +82,7 @@
                 text-align: center;
             }
             section>h3{
-                color: #02918c;
+                color: ivory;
                 margin: 15px 0px; /* 상하 좌우 */
             }
             section>p{
@@ -111,15 +112,26 @@
                 margin: 0px;
             }
             section>#work_list>li{
-                float: left;
-                list-style: none;
-                width: 25%;
+        
+        
+                width: 25%;background-image: url("images/dog.jpg");
+                background-size: 100% auto; /* 가로 세로 */
+                background-size: contain ; /* 표지 처럼 */
+                background-repeat:no-repeat; /*반복 방식 */
+                /* repeat, no-repeat, repeat-x, repeat-y */
+                background-color: white;
+                background-position: 50% 50%; /* 가로 세로*/
+                
             }
             section>#work_list img{
                 width: 100%; /* 내가 쓸수 있는 공간 */
                 display: inline; /* 기본 = 인라인 */
                 display: block; /* 출력방식: 블록 */
                 
+            }
+            section>h3{
+                font-size: 70px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
           
         </style>
@@ -172,51 +184,17 @@
                         Than the summer of 2002.
                 </P>
                 <ul id="about_list">
-                    <li>
-                        <img src="images/layout2_icon1.jpg"/>
+                   
+                        <img src="images/dog.jpg"/>
                         <dl>
 
-                         <dt>Title goes here</dt>
+                         <dt>I'm songs best friend</dt>
                             <dd>
-                                onsectetur adipisicing elit, sedo eiusmod
-                                tempor incidi
-                                et dolorerserss eerhfre mag.
+                                song is my best friend and i like play with him
                             </dd>
                         </dl>
-                    </li>
-                    <li>
-                    <img src="images/layout2_icon1.jpg"/>
-                    <dl>
-                        <dt>Title goes here</dt>
-                        <dd>
-                            onsectetur adipisicing elit, sedo eiusmod
-                            tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </dd>
-                    </dl>
-                </li>
-                <li>
-                <img src="images/layout2_icon1.jpg"/>
-                    <dl>
-                        <dt>Title goes here</dt>
-                        <dd>
-                            onsectetur adipisicing elit, sedo eiusmod
-                            tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </dd>
-                    </dl>
-                </li>
-                <li>
-                    <img src="images/layout2_icon1.jpg"/>
-                    <dl>
-                        <dt>Title goes here</dt>
-                        <dd>
-                            onsectetur adipisicing elit, sedo eiusmod
-                            tempor incidi
-                            et dolorerserss eerhfre mag.
-                        </dd>
-                    </dl>
-                </li>
+                 
+                    
                 <div class="clear"></div>
                 </ul>
                 <video controls autoplay>
@@ -238,23 +216,9 @@
             <section>
                 <h3>MY WORK</h3>
                 <P>
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit,
-                    sed do eiusmod tempor
-                    incididunt ut labore 
-                    et dolore magna aliqua.
+                    crush something,chew some lines
                 </P>
-                <ul id="work_list">
-                    <li><img src="images/layout2_pic1.jpg"></li>
-                    <li><img src="images/layout2_pic2.jpg"></li>
-                    <li><img src="images/layout2_pic3.jpg"></li>
-                    <li><img src="images/layout2_pic4.jpg"></li>
-                    <li><img src="images/layout2_pic5.jpg"></li>
-                    <li><img src="images/layout2_pic6.jpg"></li>
-                    <li><img src="images/layout2_pic7.jpg"></li>
-                    <li><img src="images/layout2_pic8.jpg"></li>
-                    <div class="clear"></div>
-                </ul>
+                
             </section>
         </div>
 
